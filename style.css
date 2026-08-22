@@ -318,3 +318,9 @@ nav{
 .nav-actions .btn{min-width:0;}
 .nav-actions .btn-primary{min-width:120px;}
 .nav-actions .btn-bari{min-width:360px;}
+
+/* Both nav buttons: height 48px, width = 3× height = 144px */
+.nav-actions .btn-primary,
+.nav-actions .btn-bari{
+  min-width:0; width:144px; height:48px; padding:0;
+}
