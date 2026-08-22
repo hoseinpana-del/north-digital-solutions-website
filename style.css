@@ -218,3 +218,40 @@ footer a:hover{color:var(--brand);}
 }
 .oee-hook .star{color:#cbb6f2;}
 .oee-hook .txt{color:#e7dcfb;}
+
+/* ── Layout corrections ────────────────────────────────────────────────
+   The page was set to a 1040px column inside a much wider viewport, which
+   left large dead margins on both sides on a normal desktop screen. */
+.wrap{max-width:1240px; padding:0 44px;}
+.hero .wrap{max-width:1240px;}
+.hero{padding:56px 0 84px;}
+.hero-grid{grid-template-columns:1.05fr .95fr; gap:56px;}
+
+/* The claim is the page's loudest element; it must not orphan a word. */
+.hero-claim{font-size:56px; line-height:1.08; letter-spacing:-1.6px; text-wrap:balance;}
+.sub{font-size:18.5px; max-width:520px; margin-bottom:32px;}
+
+/* Product-coloured primary action, since the product now leads the page */
+.btn-bari-solid{
+  display:inline-flex; align-items:center; gap:9px;
+  background:var(--bari); color:#fff; padding:13px 26px;
+}
+.btn-bari-solid:hover{background:#3a0d7d;}
+.bari-mark-btn{height:16px; width:auto; filter:brightness(0) invert(1);}
+
+/* Nav button carries the real wordmark rather than a letterform + text */
+.btn-bari{padding:9px 20px;}
+.bari-mark-sm{height:20px;}
+
+/* Five-character values overflowed the ring at the old size */
+.gauge-val .n{font-size:21px; letter-spacing:-.5px;}
+
+.site-origin{margin-top:6px; color:var(--text-mute); font-size:13.5px;}
+
+@media (max-width:1100px){
+  .wrap{max-width:100%; padding:0 32px;}
+}
+@media (max-width:860px){
+  .hero-claim{font-size:36px; letter-spacing:-.8px;}
+  .hero{padding:40px 0 56px;}
+}
