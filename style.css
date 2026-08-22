@@ -271,3 +271,37 @@ footer a:hover{color:var(--brand);}
 /* Equal padding still yields unequal widths, because a wordmark is narrower
    than the words "Get in touch". Give both a shared floor so they read as a pair. */
 .nav-actions .btn{min-width:168px;}
+
+/* ── bari-branded actions ──────────────────────────────────────────────
+   The wordmark is an image and the label is text, so they don't share a
+   baseline automatically. Aligning the boxes centrally leaves the word
+   sitting high, because the mark's descender ("bari" has none) makes its
+   optical centre differ from the text's. Nudge the label instead. */
+.bari-word{
+  font-family:'Poppins', 'Inter', sans-serif;
+  font-weight:600;
+  color:var(--bari);
+  letter-spacing:-.2px;
+}
+
+.btn-bari-lg{
+  display:inline-flex; align-items:center; gap:10px;
+  padding:14px 28px; font-size:17px;
+}
+.bari-mark-cta{height:22px; width:auto; display:block; position:relative; top:1px;}
+.btn-bari-lg .bari-word{font-size:18px; position:relative; top:1px;}
+
+/* Plain text link, no chrome */
+.nav-signin{
+  font-family:'Poppins', 'Inter', sans-serif;
+  font-weight:600; font-size:15px; color:var(--bari);
+  padding:0 4px; white-space:nowrap;
+}
+.nav-signin:hover{color:#3a0d7d;}
+
+/* Sign in on the product card: label only, same purple wordmark styling */
+.prod-cta.btn-bari{padding:12px 26px;}
+.prod-cta .bari-word{font-size:16px;}
+
+/* Only the bari button needs the shared width; the plain link must not stretch */
+.nav-actions .nav-signin{min-width:0; height:auto;}
