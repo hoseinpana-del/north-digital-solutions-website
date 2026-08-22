@@ -255,3 +255,15 @@ footer a:hover{color:var(--brand);}
   .hero-claim{font-size:36px; letter-spacing:-.8px;}
   .hero{padding:40px 0 56px;}
 }
+
+/* One button holds text, the other an image, so their natural heights differ.
+   Pin both to the same box and centre the contents instead of relying on padding. */
+.nav-actions .btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  height:48px; padding:0 26px; line-height:1;
+}
+.btn-bari{gap:0;}
+.nav-actions .bari-mark-sm{height:22px;}
+
+/* Wordmark inside the mock's header row */
+.bari-mark-xs{height:15px; width:auto;}
