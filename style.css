@@ -267,3 +267,7 @@ footer a:hover{color:var(--brand);}
 
 /* Wordmark inside the mock's header row */
 .bari-mark-xs{height:15px; width:auto;}
+
+/* Equal padding still yields unequal widths, because a wordmark is narrower
+   than the words "Get in touch". Give both a shared floor so they read as a pair. */
+.nav-actions .btn{min-width:168px;}
