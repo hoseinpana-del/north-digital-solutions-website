@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>North Digital Solutions</title>
-<meta name="description" content="North Digital Solutions helps organizations improve efficiency, accuracy, visibility, and productivity by transforming manual business processes into connected digital solutions, built on the Microsoft Power Platform.">
+<title>North Digital Solutions — bari operations platform &amp; digital consulting</title>
+<meta name="description" content="bari is an operations platform for running a business on real data — starting with bari Performance for OEE, downtime and scrap. North Digital Solutions also builds custom digital solutions, on the Microsoft Power Platform or from scratch.">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,69 +17,175 @@
   <div class="wrap">
     <img src="logo.png" class="logo-img" alt="North Digital Solutions logo">
     <div class="navlinks">
+      <a href="#products">Products</a>
       <a href="#services">Services</a>
       <a href="#approach">Approach</a>
       <a href="#about">About</a>
     </div>
-    <a href="mailto:info@northdigitalsolutions.com" class="btn btn-primary">Get in touch</a>
+    <div class="nav-actions">
+      <!-- Points at the product section, not the login screen: a visitor who
+           doesn't yet know what bari is shouldn't land on a sign-in form. -->
+      <a href="#products" class="btn btn-bari">
+        <img src="bari-mark.png" alt="" class="bari-mark-sm">
+        <span>bari</span>
+      </a>
+      <a href="mailto:info@northdigitalsolutions.com" class="btn btn-primary">Get in touch</a>
+    </div>
   </div>
 </nav>
 
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <p class="tagline">"If you can't measure it, you can't improve it."</p>
-      <h1>Digital solutions for smarter business operations</h1>
-      <p class="sub">We help organizations improve efficiency, accuracy, visibility, and productivity by transforming manual business processes into connected digital solutions.</p>
-      <a href="mailto:info@northdigitalsolutions.com" class="btn btn-primary">Book a free consultation</a>
+      <h1 class="hero-claim">If you can&rsquo;t measure it,<br>you can&rsquo;t improve it.</h1>
+      <p class="sub">
+        Continuous improvement runs on data. Until performance is measured, no one
+        can say where the losses are &mdash; and what can&rsquo;t be seen can&rsquo;t be fixed.
+        We build the tools that make it visible, then help you act on what they show.
+      </p>
+      <div class="hero-ctas">
+        <a href="#products" class="btn btn-primary">Explore bari</a>
+        <a href="mailto:info@northdigitalsolutions.com" class="btn btn-outline">Book a free consultation</a>
+      </div>
     </div>
 
     <div class="oee-visual">
-      <div class="float-badge"><span class="fdot"></span>Line 3 · changeover detected</div>
+      <div class="float-badge"><span class="fdot"></span>IMM3 · 2 of 3 shifts reported</div>
       <div class="oee-card">
         <div class="oee-top">
-          <span class="t">Plant overview — live</span>
+          <span class="t"><img src="bari-mark.png" alt="" class="bari-mark-xs">Plant overview</span>
           <span class="oee-live"><span class="oee-dot"></span>Live</span>
         </div>
 
         <div class="oee-main">
           <div class="gauge">
             <svg width="112" height="112" viewBox="0 0 112 112">
-              <circle cx="56" cy="56" r="48" fill="none" stroke="#eee9e2" stroke-width="10"/>
-              <circle cx="56" cy="56" r="48" fill="none" stroke="#1a8f5c" stroke-width="10" stroke-linecap="round" stroke-dasharray="301.6" stroke-dashoffset="72.4"/>
+              <circle cx="56" cy="56" r="48" fill="none" stroke="#ece6f7" stroke-width="10"/>
+              <circle cx="56" cy="56" r="48" fill="none" stroke="#4b12a0" stroke-width="10"
+                      stroke-linecap="round" stroke-dasharray="301.6" stroke-dashoffset="57.9"/>
             </svg>
-            <div class="gauge-val"><span class="n">76%</span><span class="l">OEE</span></div>
+            <div class="gauge-val"><span class="n">80.8%</span><span class="l">OEE</span></div>
           </div>
           <div class="mini-kpis">
             <div class="mini-kpi">
-              <div><div class="l">Downtime</div><div class="bar-track"><div class="bar-fill" style="width:38%; background:#c98a2e;"></div></div></div>
-              <span class="v">12%</span>
+              <div><div class="l">Unplanned downtime</div><div class="bar-track"><div class="bar-fill" style="width:20%; background:#c98a2e;"></div></div></div>
+              <span class="v">4.0%</span>
             </div>
             <div class="mini-kpi">
-              <div><div class="l">Scrap</div><div class="bar-track"><div class="bar-fill" style="width:18%; background:#b5453f;"></div></div></div>
-              <span class="v">4%</span>
+              <div><div class="l">Scrap</div><div class="bar-track"><div class="bar-fill" style="width:10%; background:#b5453f;"></div></div></div>
+              <span class="v">1.0%</span>
             </div>
           </div>
         </div>
 
         <div class="oee-chart">
-          <span class="l">OEE trend — last 7 days</span>
+          <span class="l">OEE trend — last 7 production days</span>
           <svg width="100%" height="54" viewBox="0 0 300 54" preserveAspectRatio="none">
-            <polyline points="0,40 40,34 80,37 120,20 160,26 200,14 240,22 300,8" fill="none" stroke="#1a8f5c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="300" cy="8" r="3.5" fill="#1a8f5c"/>
+            <!-- 79.5 · 80.4 · 51.9 · 78.5 · 78.6 · 80.8, plotted 40%–90% -->
+            <line x1="0" y1="16.4" x2="300" y2="16.4" stroke="#c9b8ec" stroke-width="1.2" stroke-dasharray="4 4"/>
+            <polyline points="0,19.5 60,18.6 120,47.1 180,20.5 240,20.4 300,18.2"
+                      fill="none" stroke="#4b12a0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="120" cy="47.1" r="3.5" fill="#b5453f"/>
+            <circle cx="300" cy="18.2" r="3.5" fill="#4b12a0"/>
           </svg>
         </div>
 
         <div class="oee-hook">
           <span class="star">✦</span>
-          <div class="txt"><b>AI insight:</b> OEE dropped 7.2% this week — 54% from night-shift downtime, 28% from higher scrap on Product X.</div>
+          <div class="txt"><b>AI insight:</b> OEE fell to 51.9% on Aug 18 — almost all of it unplanned downtime, which reached 19.9% of planned time that day.</div>
         </div>
       </div>
     </div>
   </div>
 </header>
 
-<section class="band">
+<!-- Products come before the consulting narrative: the platform is now the
+     headline asset, and it needs to be found without scrolling for it. -->
+<section id="products">
+  <div class="wrap">
+    <span class="kicker">Our products</span>
+    <div class="bari-head">
+      <img src="bari-logo.png" alt="bari" class="bari-wordmark">
+      <p class="lead bari-lead">
+        A platform for running operations on real data. Each module solves one part of
+        the business, shares the same accounts and permissions, and needs no new hardware
+        or sensors to get started.
+      </p>
+    </div>
+
+    <div class="prod-grid">
+      <article class="prod-card prod-live">
+        <div class="prod-top">
+          <h3>bari Performance</h3>
+          <span class="pill pill-live">Available now</span>
+        </div>
+        <p>
+          Manufacturing performance intelligence. Track OEE, downtime, scrap and rework
+          by line, machine and shift &mdash; with the reasons behind every number, not just
+          the number itself.
+        </p>
+        <ul class="prod-points">
+          <li>Runs on operator entry &mdash; no PLC integration required to start</li>
+          <li>Availability, performance and quality broken out, with targets per line</li>
+          <li>Downtime Pareto and first-time-through, so losses are traceable</li>
+        </ul>
+        <a href="https://app.northdigitalsolutions.com" class="btn btn-primary prod-cta">Sign in to bari</a>
+      </article>
+
+      <article class="prod-card">
+        <div class="prod-top">
+          <h3>bari Trade</h3>
+          <span class="pill pill-soon">In development</span>
+        </div>
+        <p>
+          Information management for trading companies &mdash; bringing quotes, orders,
+          suppliers and documents into one structured place instead of scattered
+          spreadsheets and inboxes.
+        </p>
+        <ul class="prod-points">
+          <li>Structured records in place of parallel spreadsheets</li>
+          <li>One source of truth across the order lifecycle</li>
+          <li>Same accounts and permissions as the rest of the platform</li>
+        </ul>
+        <a href="mailto:info@northdigitalsolutions.com" class="btn btn-outline prod-cta">Register interest</a>
+      </article>
+    </div>
+
+    <p class="prod-note">
+      More modules are planned. Because they sit on one platform, adding a module doesn&rsquo;t
+      mean another login, another supplier, or another set of data to reconcile.
+    </p>
+  </div>
+</section>
+
+<section id="about" class="band">
+  <div class="wrap about">
+    <div class="avatar"><img src="founder.jpg" alt="Hossein Hosseini, founder of North Digital Solutions"></div>
+    <div>
+      <span class="kicker">Founder</span>
+      <h2>Hossein Hosseini</h2>
+      <p class="about-role">20+ years in engineering, manufacturing and business operations</p>
+      <p>
+        Most software vendors have never run a production line. Most operations
+        consultants can&rsquo;t build the tool they recommend. The work here comes from
+        doing both &mdash; knowing where a process actually loses time, then building
+        the system that measures and fixes it.
+      </p>
+      <p>
+        Master&rsquo;s degree in Engineering. bari is the product of that combination:
+        tools designed around how a business really runs, not generic software.
+      </p>
+      <div class="about-tags">
+        <span>Process improvement</span>
+        <span>Procurement and supply chain</span>
+        <span>Project management</span>
+        <span>Software and platform development</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
   <div class="wrap">
     <span class="kicker">The business challenge</span>
     <h2>Manual processes compound — each stage slows the business down further</h2>
@@ -152,32 +258,17 @@
 <section>
   <div class="wrap two-col">
     <div>
-      <span class="kicker">What does a company need?</span>
-      <h2>Built primarily on the Microsoft Power Platform</h2>
+      <span class="kicker">Technology</span>
+      <h2>The right tool for the problem &mdash; not the other way round</h2>
     </div>
     <div class="right">
-      <p>Power Apps for custom business apps and data entry. Power Automate for workflow and process automation. Power BI for dashboards and KPIs. Dataverse or SQL for structured data. AI and Copilot for intelligent analysis on top of it all.</p>
-      <p>We first assess business requirements, number of users, and data sources — then build the right solution with the right technology and the right licensing. We help companies avoid paying for technology they don't actually need.</p>
+      <p>Where a business already runs on Microsoft, the Power Platform is often the fastest route: Power Apps for data entry, Power Automate for workflow, Power BI for dashboards, Dataverse or SQL underneath.</p>
+      <p>Where it isn&rsquo;t the right fit &mdash; or where the need is a product rather than a project &mdash; we build the software ourselves. bari is that path: a full platform, built in-house, running on its own database and access control.</p>
+      <p>We assess the requirement, the number of users and the data sources first, then choose the technology and the licensing. The aim is to avoid paying for tools a business doesn&rsquo;t actually need.</p>
     </div>
   </div>
 </section>
 
-<section id="about" class="band">
-  <div class="wrap about">
-    <div class="avatar"><img src="founder.jpg" alt="Founder of North Digital Solutions"></div>
-    <div>
-      <span class="kicker">Founder</span>
-      <h2>20+ years in engineering, manufacturing, and business operations</h2>
-      <p>Master's degree in Engineering. Focused on building practical digital solutions that solve real business problems — not generic software, but tools designed around how your business actually runs.</p>
-      <div class="about-tags">
-        <span>Process improvement</span>
-        <span>Procurement and supply chain</span>
-        <span>Project management</span>
-        <span>Power Apps / Automate / BI</span>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="cta">
   <div class="wrap">

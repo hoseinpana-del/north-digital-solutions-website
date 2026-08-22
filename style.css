@@ -141,3 +141,80 @@ footer a:hover{color:var(--brand);}
   h1{font-size:28px;}
   .avatar{width:160px; height:160px;}
 }
+
+/* ── bari product identity ─────────────────────────────────────────────
+   The purple belongs to the product. The site keeps its own red so the
+   two brands stay distinguishable rather than blending into one. */
+:root{
+  --bari:#4b12a0;
+  --bari-soft:#f3eeff;
+}
+
+.nav-actions{display:flex; align-items:center; gap:14px;}
+.btn-bari{
+  display:inline-flex; align-items:center; gap:8px;
+  background:var(--bari-soft); color:var(--bari);
+  border:1px solid #ddd0f7; padding:10px 18px;
+}
+.btn-bari:hover{background:#ebe2ff;}
+.bari-mark-sm{height:18px; width:auto; display:block;}
+.btn-outline{border:1px solid var(--border); color:var(--text);}
+.btn-outline:hover{border-color:var(--text-dim);}
+
+/* Hero: the slogan is now the claim, not a caption above it */
+.hero-claim{font-size:52px; line-height:1.14; letter-spacing:-1.4px; margin-bottom:24px;}
+.hero-ctas{display:flex; gap:14px; flex-wrap:wrap;}
+
+/* Products */
+#products{padding:88px 0;}
+.bari-head{display:flex; align-items:flex-start; gap:36px; margin:6px 0 40px; flex-wrap:wrap;}
+.bari-wordmark{height:52px; width:auto; flex-shrink:0;}
+.bari-lead{margin:0; max-width:620px;}
+
+.prod-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:24px;}
+.prod-card{
+  border:1px solid var(--border); border-radius:16px; padding:30px;
+  background:var(--bg); display:flex; flex-direction:column;
+}
+.prod-live{border-color:#ddd0f7; background:linear-gradient(160deg,#fdfcff 0%,#f8f5ff 100%);}
+.prod-top{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:14px;}
+.prod-card h3{font-size:21px; font-weight:700; letter-spacing:-.3px;}
+.prod-card p{color:var(--text-dim); font-size:15.5px;}
+
+.pill{font-size:11.5px; font-weight:700; padding:4px 11px; border-radius:99px; white-space:nowrap; letter-spacing:.2px;}
+.pill-live{background:var(--bari); color:#fff;}
+.pill-soon{background:var(--bg-soft); color:var(--text-mute); border:1px solid var(--border);}
+
+.prod-points{list-style:none; margin:18px 0 26px; display:flex; flex-direction:column; gap:9px;}
+.prod-points li{
+  position:relative; padding-left:20px; font-size:14.5px; color:var(--text-dim); line-height:1.55;
+}
+.prod-points li::before{
+  content:""; position:absolute; left:2px; top:9px;
+  width:6px; height:6px; border-radius:50%; background:var(--bari);
+}
+.prod-cta{margin-top:auto; align-self:flex-start;}
+.prod-note{margin-top:26px; font-size:14.5px; color:var(--text-mute); max-width:720px;}
+
+.about-role{font-size:16.5px; color:var(--text-dim); margin-bottom:16px; font-weight:500;}
+
+@media (max-width:860px){
+  .hero-claim{font-size:38px; letter-spacing:-1px;}
+  .prod-grid{grid-template-columns:1fr;}
+  .bari-head{gap:20px;}
+  .bari-wordmark{height:42px;}
+  .navlinks{display:none;}
+}
+
+/* Hero mock now carries the product's identity, not the site's red */
+.oee-top .t{display:flex; align-items:center; gap:7px;}
+.bari-mark-xs{height:14px; width:auto;}
+.oee-live{color:var(--bari);}
+.oee-dot{background:var(--bari); box-shadow:0 0 0 3px rgba(75,18,160,.14);}
+.float-badge .fdot{background:#c98a2e;}
+.oee-hook{
+  background:linear-gradient(135deg,#4b12a0 0%,#33096f 100%);
+  box-shadow:0 10px 24px -10px rgba(75,18,160,.5);
+}
+.oee-hook .star{color:#cbb6f2;}
+.oee-hook .txt{color:#e7dcfb;}
